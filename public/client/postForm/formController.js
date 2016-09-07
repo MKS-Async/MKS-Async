@@ -6,7 +6,7 @@ angular.module('async.formController', [])
     // $scope.obj = {};
 
     // $scope.print=function(){
-    //   console.log('testing:', $scope.obj.flow);
+    //   console.log('testing:', JSON.stringify($scope.obj.flow));
     // }
 
 
@@ -39,8 +39,8 @@ angular.module('async.formController', [])
     };
 
     $scope.$watch('place', function() {
-      if ($scope.place.geometry.location) {
-        console.log($scope.place.geometry);
+      if (($scope.place) && ($scope.place.geometry) && ($scope.place.geometry.location)) {
+        console.log(JSON.stringify($scope.place.geometry));
         $scope.getMap($scope.place.geometry.location.lat(), $scope.place.geometry.location.lng());
       }
     });
@@ -55,6 +55,7 @@ angular.module('async.formController', [])
       $scope.input = {
         title: this.title,
         imgUrl: this.imgUrl,
+        image : this.image,
         name: this.name,
         school: this.school,
         major: this.major,
@@ -68,7 +69,7 @@ angular.module('async.formController', [])
 
       Modal.createAd($scope.input)
         .success(function() {
-          console.log('POST request data:', $scope.input);
+          console.log('POST request data:', JSON.stringify($scope.input));
           $window.location.reload();
         })
         .error(function(err) {
@@ -77,7 +78,7 @@ angular.module('async.formController', [])
     };
 
     $scope.cancel = function() {
-      console.log($scope.$parent);
+      console.log(JSON.stringify($scope.$parent));
       $scope.$parent.$dismiss();
     };
 
