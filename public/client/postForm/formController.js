@@ -2,20 +2,7 @@ angular.module('async.formController', [])
 
 .controller('FormController', ['$scope', '$http', 'Modal', '$window', 'uiGmapGoogleMapApi',
   function($scope, $http, Modal, $window, uiGmapGoogleMapApi) {
-
-    // $scope.obj = {};
-
-    // $scope.print=function(){
-    //   console.log('testing:', JSON.stringify($scope.obj.flow));
-    // }
-
-
-    // $scope.uploadFile = function(){
-    //   var file = $scope.myFile;
-    //   var uploadUrl = '/upload';
-    //   Modal.uploadFile(file, uploadUrl);
-    // }
-
+    
     $scope.getMap = function(lat, lng) {
       uiGmapGoogleMapApi.then(function(maps) {
         $scope.map = {
@@ -52,6 +39,7 @@ angular.module('async.formController', [])
       if(!Modal.checkUrl(this.imgUrl)){
         this.imgUrl = "http://i.imgur.com/XehxIGv.jpg";
       }
+      
       $scope.input = {
         title: this.title,
         imgUrl: this.imgUrl,
