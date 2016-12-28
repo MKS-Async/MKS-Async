@@ -1,151 +1,169 @@
 body {
-  font-family: Helvetica,arial, sans-serif;
+    font-family: Helvetica, arial, sans-serif;
 }
 
-a, a:hover {
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
+a,
+a:hover {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
 }
-
 
 nav {
-  background-color: #458BED;
-  padding: 0 0 0 5%;
+    background-color: #458BED;
+    padding: 0 0 0 5%;
 }
 
 .list {
-  margin: 0 5% 0 5%;
+    margin: 0 5% 0 5%;
 }
 
-
-
 input {
-  width: 360px;
-  display: block;
-  font-size: 13px;
-  padding: 5px;
-  margin-bottom: 5px;
+    width: 360px;
+    display: block;
+    font-size: 13px;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 .borderonad {
-  border: solid 2px #458BED;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 5px 5px 5px 5px;
-  max-height: 250px;
-  min-height: 150px;
-  text-align: left;
+    border: solid 2px #458BED;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 5px 5px 5px;
+    max-height: 250px;
+    min-height: 150px;
+    text-align: left;
 }
 
-.modal-header{
-  background-color: #458BED;
+.modal-header {
+    background-color: #458BED;
 }
 
 .error {
-  border: red solid 4px;
-  padding: 10px;
-  margin: 0 10px;
+    border: red solid 4px;
+    padding: 10px;
+    margin: 0 10px;
 }
 
 .clean {
-  border: #efe solid 2px;
-  padding: 10px;
-  margin: 0 10px;
+    border: #efe solid 2px;
+    padding: 10px;
+    margin: 0 10px;
 }
 
-.btn-outline-default, .btn-outline-default:hover {
-  background-color: transparent;
-  color: inherit;
-  border-color: grey;
+.btn-outline-default,
+.btn-outline-default:hover {
+    background-color: transparent;
+    color: inherit;
+    border-color: grey;
 }
 
-.btn-success, .btn-success:hover, .btn-success:focus{
-  background-color: #39D484;
-  border-color: #39D484;
+.btn-success,
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #39D484;
+    border-color: #39D484;
 }
 
-.container-fluid{
-  padding-left: 0;
-  padding-right:0;
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
 }
 
-#listB{
-  padding-right: 5px;
-}
-.searchBar{
-  background-color: #458BED;
-  text-align: center;
-  padding: 2% 5% 2% 5%;
+.listing-title {
+    padding-left: 85px;
 }
 
-.colFive{
-  padding: 0;
+.red {
+    color: red;
 }
 
-.colTwo{
-  padding: 0;
-  display:inline;
+.modal-text {
+    padding-left: 15px;
 }
 
-.navB{
-  margin-top: 13px;
+#listB {
+    padding-right: 5px;
+}
+
+.searchBar {
+    background-color: #458BED;
+    text-align: center;
+    padding: 2% 5% 2% 5%;
+}
+
+.colFive {
+    padding: 0;
+}
+
+.colTwo {
+    padding: 0;
+    display: inline;
+}
+
+.navB {
+    margin-top: 13px;
 }
 
 .angular-google-map-container {
-  height: 300px; // Or whatever pixel value you require :)
+    height: 300px; // Or whatever pixel value you require :)
 }
 
 .pac-container {
     z-index: 100000;
 }
 
-.header{
-/*  background-color: #3076D9;*/
-  padding-bottom: 10px;
-  margin-bottom: 5px;
+.header {
+    /*  background-color: #3076D9;*/
+    padding-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-.title{
-  color: white;
+.title {
+    color: white;
 }
 
-.carousel,.item.active{
-  height: 100%;
-  max-height: 450px;
-}
-.carousel-inner{
-  height:100%;
+.carousel,
+.item.active {
+    height: 100%;
+    max-height: 450px;
 }
 
-#pagination{
-  text-align: center;
+.carousel-inner {
+    height: 100%;
 }
 
-.pagination>li>a, .pagination>li>a:hover,.pagination>li>span{
-  color: #458BED;
+#pagination {
+    text-align: center;
 }
 
-#adProfileIcon{
-  float:right;
-  right: 50px;
-  top:30px;
-  position: absolute;
-  height:150px;
-  width: 150px;
-  border-radius: 100%;
-  border: 5px solid  #458BED;
+.pagination>li>a,
+.pagination>li>a:hover,
+.pagination>li>span {
+    color: #458BED;
 }
 
-#adListIcon{
-  float:right;
-  border-radius: 100%;
-  border: 3px solid #458BED;
-  margin-right: 5px;
-  height: 80px;
-  width: 80px;
+#adProfileIcon {
+    float: right;
+    right: 50px;
+    top: 30px;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 5px solid #458BED;
 }
 
-#bookButtons{
-  margin-top: 10px;
+#adListIcon {
+    float: right;
+    border-radius: 100%;
+    border: 3px solid #458BED;
+    margin-right: 5px;
+    height: 80px;
+    width: 80px;
+}
+
+#bookButtons {
+    margin-top: 10px;
 }

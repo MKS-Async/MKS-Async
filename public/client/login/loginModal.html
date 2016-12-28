@@ -1,27 +1,29 @@
-<div class = 'modal-header title'>
-  <h4 class = "title">Sign Up or Log In</h4>
+<div class='modal-header title'>
+    <h4 class="title modal-text">Sign Up or Log In</h4>
 </div>
 <div class='modal-body form-group'>
-  <p>You must log in or sign up in order to add a listing. Please enter your email and password below to proceed.</p><br/>
-  <form>
-    <div class ='col-md-12'>
-      <input class="form-control" type="text" id="email" name="email" placeholder="Email" ng-model="email"/>
-    </div>
-    <br/><br/><br/>
-    <div class = 'col-md-12'>
-      <input class='form-control' type="password" id="password" name="password" placeholder="Password" ng-model="password"/>
-    </div>
-    <br/><br/><br/>
-    <div class='col-md-6'>
-        <button class="btn btn-success btn-block" name="signin" ng-click="loginUser();">Sign In</button>
-      </div>
-      <div class='col-md-6'>
-      <button class="btn btn-outline-default btn-block" name="signup" ng-click="createUser();">Sign Up</button>
-      </div>
-      <br/><br/>
-      <div class='col-md-6'>
-        <button class="btn btn-success btn-block" name="facebook" ng-click="signInWith('google');">Login with Google</button>
-      </div>
+    <div class="modal-text">
+        <p>You must log in or sign up in order to add a listing. Please enter your email and password below to proceed.</p>
+        <p class="red"> Note: Your password must be 6 characters or longer. </p><br/></div>
+    <form>
+        <div class='col-md-12'>
+            <input class="form-control" type="text" id="email" name="email" placeholder="Email" ng-model="email" />
+        </div>
+        <br/><br/><br/>
+        <div class='col-md-12'>
+            <input class='form-control' type="password" id="password" name="password" placeholder="Password" ng-model="password" />
+        </div>
+        <br/><br/><br/>
+        <div class='col-md-6'>
+            <button class="btn btn-success btn-block" name="signin" ng-click="loginUser();">Sign In</button>
+        </div>
+        <div class='col-md-6'>
+            <button class="btn btn-outline-default btn-block" name="signup" ng-click="createUser();">Sign Up</button>
+        </div>
+        <!--<br/><br/>-->
+        <!--<div class='col-md-6'>
+            <button class="btn btn-success btn-block" name="facebook" ng-click="signInWith('google');">Login with Google</button>
+        </div>-->
     </form>
     <br/><br/>
     <!-- Container where we'll display the user details -->
@@ -30,4 +32,4 @@
       Firebase sign-in status: <span id="quickstart-sign-in-status">{{ message }}</span>
     </div>
  -->
- </div>
+</div>

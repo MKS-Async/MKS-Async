@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html ng-app='async'>
-  <head>
-    <title>School Tour</title>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+
+<head>
+    <title>Future Insight</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <link rel="shortcut icon" href="/client/styles/logotest0.png" type="image/png" sizes="16x16" styles="color:blue">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.3.0/journal/bootstrap.min.css">
     <link rel="stylesheet" href="/angular-google-places-autocomplete/src/autocomplete.css">
-    <link rel='stylesheet' type='text/css' href='/dist/style.css'/>
+    <link rel='stylesheet' type='text/css' href='/dist/style.css' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="/bootstrap/dist/js/bootstrap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAce5w_fapMtVvsiBl-uxQRNZ6bpVXOD1c&libraries=places"></script>
@@ -30,18 +31,18 @@
     <script src="https://www.gstatic.com/firebasejs/ui/live/0.5/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/live/0.5/firebase-ui-auth.css" />
     <script>
-    // Initialize Firebase
-    var config = {
-    apiKey: "AIzaSyBf5hgcfKqgRMvx4DvFtSq78S73Uv0kZic",
-    authDomain: "future-insight.firebaseapp.com",
-    databaseURL: "https://future-insight.firebaseio.com",
-    storageBucket: "future-insight.appspot.com"
-    };
-    firebase.initializeApp(config);
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBf5hgcfKqgRMvx4DvFtSq78S73Uv0kZic",
+            authDomain: "future-insight.firebaseapp.com",
+            databaseURL: "https://future-insight.firebaseio.com",
+            storageBucket: "future-insight.appspot.com"
+        };
+        firebase.initializeApp(config);
     </script>
 
     <body ng-view></body>
-<footer>
-</footer>
+    <footer>
+    </footer>
 
 </html>
